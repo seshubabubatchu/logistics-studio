@@ -3,6 +3,7 @@ import Footer from "@/components/ui/Footer";
 import SmoothScrollProvider from "@/components/ui/SmoothScrollProvider";
 import Loader from "@/components/sections/Loader";
 import Hero from "@/components/sections/Hero";
+import EdiFlow from "@/components/sections/EdiFlow";
 
 export default function Home() {
   return (
@@ -14,9 +15,7 @@ export default function Home() {
         <main className="flex-grow">
           <Hero />
 
-          <section id="edi-flow" className="min-h-screen flex items-center justify-center border-b border-white/10">
-            <h2 className="text-4xl font-bold">EDI Flow Placeholder</h2>
-          </section>
+          <EdiFlow />
 
           <section id="legacy-to-cloud" className="min-h-screen flex items-center justify-center border-b border-white/10">
             <h2 className="text-4xl font-bold">Legacy to Cloud Placeholder</h2>
