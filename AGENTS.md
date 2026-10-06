@@ -6,5 +6,5 @@
 - Mobile: below 768px use simplified versions (no pinned horizontal scroll, no 3D, fewer particles).
 - Keep sections as separate components in `src/components/sections/`. Copy lives only in `src/content/site.ts`.
 - Lazy-load Three.js (dynamic import, ssr: false). Initial JS under 250 KB gzipped excluding the lazy chunk.
-- Run `npm run lint` and `npm run build` before finishing every task.
+- Verification: never run `npm run build`, `npm run lint`, `npm run dev`, `next start` or any server/watch command. Only run `npx tsc --noEmit` with a timeout of 120 seconds. The human runs lint and build separately.
 - Reference images are in `docs/reference/frames/`. They show the intended look; the written spec in `docs/SPEC.md` is the source of truth for text and behavior.

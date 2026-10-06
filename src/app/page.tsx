@@ -4,6 +4,7 @@ import SmoothScrollProvider from "@/components/ui/SmoothScrollProvider";
 import Loader from "@/components/sections/Loader";
 import Hero from "@/components/sections/Hero";
 import EdiFlow from "@/components/sections/EdiFlow";
+import AiMap from "@/components/sections/AiMap";
 
 export default function Home() {
   return (
@@ -21,9 +22,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold">Legacy to Cloud Placeholder</h2>
           </section>
 
-          <section id="ai-map" className="min-h-screen flex items-center justify-center border-b border-white/10">
-            <h2 className="text-4xl font-bold">AI Map Placeholder</h2>
-          </section>
+          <AiMap />
 
           <section id="control-tower" className="min-h-screen flex items-center justify-center border-b border-white/10">
             <h2 className="text-4xl font-bold">Control Tower Placeholder</h2>
