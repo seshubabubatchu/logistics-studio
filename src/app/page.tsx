@@ -1,21 +1,18 @@
 import Nav from "@/components/ui/Nav";
 import Footer from "@/components/ui/Footer";
 import SmoothScrollProvider from "@/components/ui/SmoothScrollProvider";
+import Loader from "@/components/sections/Loader";
+import Hero from "@/components/sections/Hero";
 
 export default function Home() {
   return (
     <SmoothScrollProvider>
+      <Loader />
       <div className="flex flex-col min-h-screen">
         <Nav />
 
-        <main className="flex-grow pt-20">
-          <section id="loader" className="min-h-screen flex items-center justify-center border-b border-white/10">
-            <h2 className="text-4xl font-bold">Loader Placeholder</h2>
-          </section>
-
-          <section id="hero" className="min-h-screen flex items-center justify-center border-b border-white/10">
-            <h2 className="text-4xl font-bold">Hero Placeholder</h2>
-          </section>
+        <main className="flex-grow">
+          <Hero />
 
           <section id="edi-flow" className="min-h-screen flex items-center justify-center border-b border-white/10">
             <h2 className="text-4xl font-bold">EDI Flow Placeholder</h2>
